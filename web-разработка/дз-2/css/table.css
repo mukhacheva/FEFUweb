@@ -213,7 +213,7 @@ footer {
 }
 
 .my-table {
-    width: 100%; /* Делаем таблицу адаптивной */
+    width: 100%; 
     max-width: 900px; 
     margin: 50px auto;
     border-collapse: collapse;

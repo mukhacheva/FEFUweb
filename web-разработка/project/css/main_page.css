@@ -1,3 +1,4 @@
+
 html {
     box-sizing: border-box;
 }
@@ -101,81 +102,12 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     justify-content: flex-start;
     background-color: #F0EAD2;
 }
 
-.first__part {
-    display: flex;
-    justify-content: center;
-}
-
-.tofind {
-    flex: 1;
-    background: #D3CBAD;
-    text-align: center;
-}
-
-.tofind h2 {
-    color: #543F33;
-    font-size: 32px;
-    text-align: center;
-    margin-top: 82px;
-    margin-bottom: 0;
-}
-
-.tofind a {
-    color: #6C584C;
-    font-size: 32px;
-}
-
-.tofind p {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 86px;
-}
-
-.tofind a:hover {
-    color: #543F33;
-    font-weight: 600;
-}
-
-.tofind .vk {
-    margin-top: 74px;
-}
-
-.tofind .tumbler {
-    margin-bottom: 70px;
-}
-
-.tofind .vk, .tofind .rutube {
-    background-color: #CBDE98;
-    display: inline-block;
-    width: 363px;
-    height: 70px;
-    border-radius: 30px;
-    line-height: 70px;
-}
-
-.tofind .tg, .tofind .tumbler {
-    background-color: rgba(249, 249, 249, 0.5);
-    display: inline-block;
-    width: 363px;
-    height: 70px;
-    border-radius: 30px;
-    line-height: 70px;
-}
-
-.main__centre {
-    flex: 2;
-    background: #F0EAD2;
-}
-
 .leaf1__img {
-    margin-left: auto;
-}
-/* .leaf1__img {
     margin-left: auto;
 }
 
@@ -185,14 +117,9 @@ main {
 
 .main__centre {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between; 
     width: 100%;  
-}
-
-.tofind {
-    display: flex;
-    align-items: flex-start;
 }
 
 .pattern1__img {
@@ -216,7 +143,7 @@ main {
     text-align: center;
 }
 
-.main__welcome h2 {
+.main__welcome h1 {
     margin: 5px;
     text-align: center;
     font-size: 32px;
@@ -239,7 +166,7 @@ main {
     width: 100%;
     height: auto;
     margin: 0;
-} */
+}
 
 .about__us {
     display: flex;
@@ -325,29 +252,26 @@ main {
     margin-bottom: 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1180px) {
     .container {
-        margin: 0 auto;
-        padding: 10px;
+        max-width: 100%;
+        padding: 0 20px;
     }
 
     header {
-        flex-direction: column;
+        padding: 15px;
         height: auto;
-        padding: 5px;
-        background-color: #ADC178;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 0;
-    }
-
-    .logo__title {
-        font-size: 30px;
+        flex-direction: column;
         text-align: center;
     }
 
+    .logo__title {
+        font-size: 28px;
+    }
+
     .nav__main {
-        flex: none;
+        width: 100%;
+        margin-top: 10px;
     }
 
     .nav__top {
@@ -355,12 +279,163 @@ main {
         gap: 15px;
     }
 
-    .nav__top a, .auth__links a {
-        font-size: 25px;
+    .nav__top a {
+        font-size: 22px;
     }
 
     .auth__links {
+        margin-top: 15px;
+    }
+
+    .auth__links a {
+        font-size: 22px;
+    }
+
+    .main__centre {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pattern1__img, .pattern2__img {
+        display: none;
+    }
+
+    .main__welcome h1, .main__welcome p {
+        font-size: 28px;
+    }
+
+    .about__us {
+        gap: 40px;
+    }
+
+    .about__us h2 {
+        font-size: 36px;
+    }
+
+    .about__us h3 {
+        font-size: 32px;
+    }
+
+    .aboutus1, .aboutus2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .tattoo, .piercing, .tatremove, .jewerly, .machine {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .tattoo img, .piercing img, .tatremove img, .jewerly img, .machine img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .oblast {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
         text-align: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px; 
+    }
+
+    header {
+        padding: 10px;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo__title {
+        font-size: 24px; 
+    }
+
+    .nav__main {
+        width: 100%;
         margin-top: 10px;
+    }
+
+    .nav__top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav__top a {
+        font-size: 20px; 
+    }
+
+    .auth__links {
+        margin-top: 10px;
+    }
+
+    .auth__links a {
+        font-size: 20px; 
+    }
+
+    .main__centre {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pattern1__img, .pattern2__img {
+        display: none;
+    }
+
+    .main__welcome h1, .main__welcome p {
+        font-size: 24px; 
+    }
+
+    .leaf2__img, .leaf1__img {
+        width: 100%;
+        height: auto; 
+        object-fit: contain;
+    }
+
+    .about__us {
+        gap: 30px; 
+    }
+
+    .about__us h2 {
+        font-size: 30px;
+    }
+
+    .about__us h3 {
+        font-size: 28px;
+    }
+
+    .aboutus1, .aboutus2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; 
+    }
+
+    .tattoo, .piercing, .tatremove, .jewerly, .machine {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .tattoo img, .piercing img, .tatremove img, .jewerly img, .machine img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
     }
 }
